@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biglietteria</title>
+    <script type="text/javascript" src="../vacanze/biglietteria.js"></script>
+    <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+    <link rel="stylesheet" href="biglietteria.css">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="jquery.qrcode.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+
+
+
+    <h1 class="centro">Biglietteria</h1>
+
+
+    <form>
+        <p>Dati anagrafici:</p>
+        Cognome: <input type="text" id="cognome"> Nome:<input type="text" id="nome"><br><br>
+
+
+        <p>Data di nascita:</p>
+        <input type="date" name="data nascita" id="data">
+
+
+        <p>Sesso:
+
+            <select id="sesso">
+                <option>M</option>
+                <option>F</option> 
+            </select>
+        </p>
+        <p>settore:
+
+            <select id="settore">
+                <option>1</option>
+                <option>2</option> 
+            </select>
+        </p>
+        <p>
+            <select id="fila">
+            <option>1</option>
+            <option>2</option> 
+        </select>
+        </p>
+        <p>
+            <select id="posto">
+            <option>1</option>
+            <option>2</option> 
+        </select>
+        </p>
+
+
+
+        <br><br><br><br><br>
+        <input type="button" id="bottone" value="genera qr" onclick="GeneraQr();">
+
+        <div id="qrcodeTable"></div>
+
+
+
+
+    </form>
+</body>
+
+</html>
