@@ -1,0 +1,16 @@
+﻿<Window x:Class="QrWebCam.Demo.gateQuattro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QrWebCam.Demo"
+        mc:Ignorable="d"
+        Title="gateQuattro" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Uniform" ImageSource="gateQuattro.jpg"/>
+        </Grid.Background>
+        <Button x:Name="home" Content="HOME" HorizontalAlignment="Left" Height="47" Margin="687,362,0,0" VerticalAlignment="Top" Width="83" Click="home_Click"/>
+
+    </Grid>
+</Window>
